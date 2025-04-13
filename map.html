@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="logo_semfundo.png"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="title">
+    <h1>Map of the wineries</h1>
+  </header>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XYyTPezHuhsjqTYf6HoJ0m84xm6bTns&ehbc=2E312F&noprof=1" width="800" height="600"></iframe>
+  </div>
+  
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Girona Wineries. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .logo {
+        display: flex;
+        
+    }
+    .title {
+        justify-content: center;
+        justify-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .title h1{
+      font-size: 45px;
+      font-family:limelight;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }     
+
+iframe {
+  max-width: 100%;
+  height: 500px;
+  border: none;
+}
+  </style>
+</body>
+</html>

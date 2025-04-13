@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine Pairing</title>
+  <link rel="stylesheet" href="style_pairing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="logo_semfundo.png" alt="Logo"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="sidebar">
+      <h2>Select Food Category</h2>
+      <select id="category">
+        <option value=""> Choose a Category </option>
+        <option value="red_meat">Red Meat</option>
+        <option value="white_meat">White Meat</option>
+        <option value="seafood">Seafood</option>
+        <option value="cheese">Cheese</option>
+        <option value="dessert">Dessert</option>
+        <option value="vegetarian">Vegetarian</option>
+      </select>
+      <button class="btn" onclick="showWineSuggestions()">Filter</button>
+    </div>
+
+    <div class="result-section">
+      <h2>Suggested Wines: </h2>
+      <ul id="wineSuggestions"></ul>
+    </div>
+  </div>
+
+
+  <script src="pairing.js"></script>
+</body>
+</html>

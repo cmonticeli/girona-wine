@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style_search.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="logo_semfundo.png" alt="Logo"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="sidebar">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><strong>Email:</strong> support@gironawines.com</li>
+      </ul>
+    </div>
+
+    <div class="result-section">
+      <h2>Contact Form</h2>
+      <form action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <style>
+    
+.result-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result-section input, 
+.result-section textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.result-section textarea {
+  resize: vertical;
+}
+
+.result-section button {
+  padding: 10px 20px;
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.result-section button:hover {
+  background-color: #a30000;
+}
+
+.sidebar p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+  </style>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="logo_semfundo.png"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-slider">
+    <div class="hero-slide active" id="slide1">
+      <div class="slide-content">
+        <h1>Welcome to Girona Wineries Guide</h1>
+        <p>Hand made like a good wine. Cheers!</p>
+      </div>
+    </div>
+    <div class="hero-slide" id="slide2">
+      <div class="slide-content">
+        <h1>Connecting you to best of the region</h1>
+        <p>Bringing you closer to what you love, one visit at a time</p>
+      </div>
+    </div>
+    <div class="hero-slide" id="slide3">
+      <div class="slide-content">
+        <h1>Wine: Sip, savor, and let the moments unfold</h1>
+        <p>A little pour of happiness in every bottle</p>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="info-section">
+
+    <div class="info-box">
+      <h3><a href="map.html">Map</a></h3>
+      <p>We mapped the local places so you don't have to</p>
+    </div>
+    <div class="info-box">
+      <h3><a href="pairing.html">Pairing</a></h3>
+      <p>Get to know the best l'Empordà and Penedès have to offer </p>
+    </div>
+  </section>
+  <section class="image-section">
+    <div class="image-container">
+      <img src="garrafas.jpg" alt="Imagem de destaque" />
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Girona Wineries. All rights reserved.</p>
+  </footer>
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentIndex = 0;
+  
+    function showNextSlide() {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }
+  
+    setInterval(showNextSlide, 5000);
+  </script>
+</body>
+</html>
